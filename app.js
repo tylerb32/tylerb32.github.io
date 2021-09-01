@@ -83,7 +83,7 @@ async function plotPath() {
         } else if (getDistanceBetweenCoords([prevPathLoc[0], prevPathLoc[1]], [telemetry[0], telemetry[1]]) >= MIN_PATH_DISTANCE) {
             let colour = 'blue';
             if (telemetry[2] - prevPathLoc[2] >= 0) {
-                colour = 'lime';
+                colour = 'green';
             } else {
                 colour = 'red';
             }
